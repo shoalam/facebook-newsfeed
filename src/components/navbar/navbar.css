@@ -1,0 +1,49 @@
+input:focus, button:focus{
+    outline: none;
+}
+
+.navbar {
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+}
+.form-group{
+    background-color: #F0F2F5;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 25px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus{
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-middle{
+    font-size: 20px;
+}
+.navbar a {
+ text-decoration: none;
+}
+.nav-right a{
+    color: #212529;
+}
+.nav-right a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
