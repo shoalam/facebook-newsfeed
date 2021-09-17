@@ -4,6 +4,8 @@ input:focus, button:focus{
 
 .navbar {
     box-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    background-color:  #fff;
+    padding: 0;
 }
 .form-group{
     background-color: #F0F2F5;
@@ -36,8 +38,39 @@ input:focus, button:focus{
 .navbar-middle{
     font-size: 20px;
 }
+.active{
+    color: #056BE1 !important;
+    border-bottom: 2px solid #056BE1;
+}
 .navbar a {
  text-decoration: none;
+}
+.navbar .navbar-middle .nav-link {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+.navbar-middle .nav-middle-icon{
+    position: relative;
+}
+.navbar-middle .icon-top{
+    position: absolute;
+    top: -5px;
+    right: -18px;
+    width: 25px;
+    height: 20px;
+    background-color: red;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-middle .icon-top-round{
+    width: 20px;
+    border-radius: 50%;
+    top: -5px;
+    right: -12px;
 }
 .nav-right a{
     color: #212529;
@@ -46,4 +79,23 @@ input:focus, button:focus{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.nav-right .nav-icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e4e4;
+    border-radius: 50%;
+}
+
+.nav-right .nav-icon:nth-of-type(1){
+    font-size: 30px;
+}
+
+.nav-right .nav-icon:hover{
+    background-color: #d3d3d3;
 }

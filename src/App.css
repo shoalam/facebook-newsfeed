@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+
+.sidebar,
+.widgets{
+  height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar::-webkit-scrollbar, 
+.widgets::-webkit-scrollbar{
+  width: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar::-webkit-scrollbar:hover{
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidebar::-webkit-scrollbar-track,
+.widgets::-webkit-scrollbar-track{
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar::-webkit-scrollbar-thumb,
+.widgets::-webkit-scrollbar-thumb{
+  background-color: lightgray;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebarRow:hover, 
+.ads-content .notifications:hover,
+.ads-content .promotion:hover,
+.btn-lg:hover{
+  background-color: #E4E6E9;
+  border-radius: 5px;
 }
+
+.btn-sm{
+  color: #1F69D0;
+  
+}
+.btn-sm:hover {
+  background-color: #E4E6E9;
+  color: #1F69D0;
+}
+
+

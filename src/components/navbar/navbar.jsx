@@ -21,7 +21,7 @@ export default class Navbar extends Component {
                 <img src="/logo.png" alt="" />
               </a>
               <form className="d-flex align-items-center form-group">
-                <SearchIcon />
+                <SearchIcon className="fs-4 text-secondary" />
                 <input
                   className="form-control me-2"
                   type="search"
@@ -53,40 +53,52 @@ export default class Navbar extends Component {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <UsersIcon />
+                    <span className="nav-middle-icon">
+                      <UsersIcon />
+                      <span className="icon-top icon-top-round">5</span>
+                    </span>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <Basic_flag1Icon />
+                    <span className="nav-middle-icon">
+                      <Basic_flag1Icon />
+                      <span className="icon-top">9+</span>
+                    </span>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <img src="/video.png" alt="" />
+                    <span className="nav-middle-icon">
+                      <img src="/video.png" alt="" />
+                      <span className="icon-top">9+</span>
+                    </span>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    <AccountGroupIcon />
+                    <span className="nav-middle-icon">
+                      <AccountGroupIcon />
+                      <span className="icon-top icon-top-round">1</span>
+                    </span>
                   </a>
                 </li>
               </ul>
-              <div className="align-items-center d-flex justify-content-around w-50 nav-right">
-                <a href="#" className="align-items-center d-flex mr-2">
+              <div className="align-items-center d-flex justify-content-end w-50 nav-right">
+                <a href="#" className="align-items-center d-flex mx-4">
                   <img src="myphoto.jpg" alt="" />
-                  <h4 className="ms-3">John Doe</h4>
+                  <h4 className="ms-3 fs-5 mb-0">John Doe</h4>
                 </a>
-                <a href="#">
+                <a href="#" className="nav-icon mx-2 bg-opacity-50">
                   <MenuGridOIcon />
                 </a>
-                <a href="#">
+                <a href="#" className="nav-icon mx-2 bg-opacity-50">
                   <FacebookMessengerIcon />
                 </a>
-                <a href="#">
+                <a href="#" className="nav-icon mx-2 bg-opacity-50">
                   <NotificationsIcon />
                 </a>
-                <a href="#">
+                <a href="#" className="nav-icon mx-2 bg-opacity-50">
                   <CaretDownIcon />
                 </a>
               </div>

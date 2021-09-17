@@ -1,0 +1,10 @@
+.card{
+    width: 500px;
+}
+
+.form-group-feedtop{
+    cursor: pointer;
+}
+.form-group-feedtop:hover{
+    background-color: #E4E6E9;
+}
